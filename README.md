@@ -7,7 +7,7 @@
 Table of Contents
 =================
   * [Install Dependancy](#install-dependancy)
-  * [Prepare Data](#prepare-data-argoverse-motion-forecasting v1.1)
+  * [Prepare Data](#prepare-data-argoverse-motion-forecasting)
   * [Training](#training)
   * [Testing](#testing)
   * [Licence](#licence)
@@ -51,8 +51,8 @@ pip install horovod
 ```
 if you have any issues regarding horovod, please refer to [horovod github](https://github.com/horovod/horovod)
 
-## Prepare Data: Argoverse Motion Forecasting v1.1
-You could check the scripts, and download the processed data instead of running it for hours.
+## Prepare Data: Argoverse Motion Forecasting
+You could check the scripts for Argoverse Motion Data v1.1, and download the processed data instead of running it for hours.
 ```sh
 bash get_data.sh
 ```
@@ -106,6 +106,8 @@ horovodrun -np 8 -H serverA:4,serverB:4 python /path/to/pretrain.py -m lanegcn_m
 horovodrun -np 8 -H serverA:4,serverB:4 python /path/to/pretrain.py -m lanegcn_p2m_pre
 ``` 
 Notice that you need to select the best model as your pre-trained model.
+
+
 2. Training
 ```sh
 # single node with 4 gpus
