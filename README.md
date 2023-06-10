@@ -150,5 +150,5 @@ check [LICENSE](LICENSE)
 
 ## Acknowledgement
 
-Our code is  built upon [LaneGCN](https://github.com/uber-research/LaneGCN). 
+Our code builds upon [LaneGCN](https://github.com/uber-research/LaneGCN). 
 We appreciate all the contributors for their awesome work.
